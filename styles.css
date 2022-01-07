@@ -47,7 +47,11 @@ table {
 	border-spacing: 0;
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 /* nav */
+
+
 
 .nav-container {
     display: flex;
@@ -66,7 +70,6 @@ table {
 
 .youtube-logo {
     display: inline-flex;
-    align-items: center;
     justify-content: center;
     position: relative;
     vertical-align: middle;
@@ -75,4 +78,76 @@ table {
     height: 40px;
     width: 97px;
     padding: 18px 14px 18px 16px;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 0 1 728px;
+    min-width: 0px;
+    font-size: 10px;
+    font-family: 'Roboto', 'Noto', sans-serif;
+    margin-right: auto;
+}
+
+.search-box {
+    background-color: hsl(0deg, 0%, 7%);
+    border: 1px solid hsl(0deg, 0%, 19%);
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 16px;
+    font-weight: 400;
+    height: 40px;
+    line-height: 24px;
+    margin-left: 4px;
+    text-align: inherit;
+    width: 100%;
+    font-family: 'Roboto', 'Noto', sans-serif;
+    padding: 0px 6px;
+    flex: 1;
+    flex-basis: 1e-9px;
+}
+
+.search-box:focus {
+    border: 1px solid #3ea6ff;
+    outline: none;
+}
+
+
+.search-icon {
+    border: 1px solid rgb(48, 48, 48);
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 0px 6px;
+    height: 40px;
+    width: 64px;
+    color: white;
+    cursor: pointer;
+}
+
+.mic {
+    box-sizing: border-box;
+    border: rgba(0, 0, 0, 1);
+    background-color: black;
+    height: 100%;
+    border-radius: 50%;
+    color: white;
+    padding: 10px;
+    margin-left: 0.4em;
+}
+
+.nav-widgits {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    color: white;
+}
+
+.sign-in {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    color: #3ea6ff;
+    padding: 8px 14px;
+    border: 1px solid #3ea6ff;
+    background-color: rgba(0, 0, 0, 0);
 }
