@@ -30,6 +30,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    background-color: rgb(24, 24, 24);
+    font-family: 'Roboto', 'Noto', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -150,4 +152,71 @@ table {
     padding: 8px 14px;
     border: 1px solid #3ea6ff;
     background-color: rgba(0, 0, 0, 0);
+}
+
+/* MAIN-VIDEO */
+
+.video-container {
+    /* outline: 1px solid red; */
+    padding: 24px 24px 0 0;
+    margin-left: 5em;
+    width: 1280px;
+}
+
+.video-tags {
+    display: inline-block;
+    color: rgb(62, 166, 255);
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 1em;
+}
+
+.video-title {
+    color: #FFF;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.video-widgits {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.views {
+    color: #AAA;
+    font-size: 14px;
+    margin-top: 0.8em;
+}
+
+.widgit-icon-container {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin-left: auto;
+}
+
+.widgit-icon-container p {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0 2em 0 0.4em;
+}
+
+.widgit-icon {
+    color: rgb(143, 143, 143);
+}
+
+hr {
+    margin-top: 1.2em;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* DESC */
+
+.desc-container img {
+    margin-top: 0.4em;
+    border-radius: 50%;
 }
