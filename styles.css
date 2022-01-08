@@ -49,8 +49,12 @@ table {
 	border-spacing: 0;
 }
 
+/* *, *::before, *::after {
+    outline: 1px solid red;
+} */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 /* nav */
 
 
@@ -216,7 +220,93 @@ hr {
 
 /* DESC */
 
-.desc-container img {
-    margin-top: 0.4em;
+.desc-container {
+   display: block;
+}
+
+.desc-top-row {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.desc-top-row img {
+    margin-top: 0em;
     border-radius: 50%;
+}
+
+
+.desc {
+    display: flex;
+    flex-flow: column;
+    margin-left: 1em;
+}
+
+.desc p {
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.channel-name {
+    margin-top: 1em;
+    color: #FFF;
+    font-size: 14px;
+}
+
+.subs {
+    color: #AAA;
+    font-size: 12px;
+    margin-bottom: 1em;
+}
+
+.subscribe {
+    border-radius: 2px;
+    border: none;
+    background-color: #c00;
+    color: #fff;
+    padding: 10px 16px;
+    min-width: 5.14rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-left: auto;
+    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.user-desc-container {
+    margin-left: 64px;
+}
+
+.user-desc {
+    color: #FFF;
+    font-size: 14px;
+}
+
+.user-desc a {
+    color: #3ea6ff;
+}
+
+.expand {
+    cursor: pointer;
+}
+
+/* comment section */
+
+.comments-header {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    color: #fff;
+    margin-top: 1em;
+}
+
+.comment-total {
+    margin-right: 1.4em;
+}
+
+.sort {
+    margin-left: 0.6em;
+    font-size: 14px;
 }
