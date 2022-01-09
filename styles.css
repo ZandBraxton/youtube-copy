@@ -49,15 +49,26 @@ table {
 	border-spacing: 0;
 }
 
-/* *, *::before, *::after {
-    outline: 1px solid red;
-} */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-/* nav */
 
 
+
+body::-webkit-scrollbar {
+    width: 0.6em;
+  }
+   
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+body::-webkit-scrollbar-thumb {
+    background-color: #717171;
+  }
+
+
+  /* nav */
 
 .nav-container {
     display: flex;
@@ -72,6 +83,7 @@ table {
 
 .hamburger {
     color: #fff;
+    cursor: pointer;
 }
 
 .youtube-logo {
@@ -84,6 +96,7 @@ table {
     height: 40px;
     width: 97px;
     padding: 18px 14px 18px 16px;
+    cursor: pointer;
 }
 
 .search-container {
@@ -139,6 +152,7 @@ table {
     color: white;
     padding: 10px;
     margin-left: 0.4em;
+    cursor: pointer;
 }
 
 .nav-widgits {
@@ -146,6 +160,10 @@ table {
     align-items: center;
     gap: 2em;
     color: white;
+}
+
+.nav-widgits span {
+    cursor: pointer;
 }
 
 .sign-in {
@@ -156,6 +174,7 @@ table {
     padding: 8px 14px;
     border: 1px solid #3ea6ff;
     background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
 }
 
 /* MAIN-VIDEO */
@@ -163,10 +182,11 @@ table {
 .main-container {
     display: flex;
     flex-flow: row;
+    flex: 1;
+    justify-content: center;
 }
 
 .video-container {
-    /* outline: 1px solid red; */
     padding: 24px 24px 0 0;
     margin-left: 5em;
     margin-right: 0;
@@ -180,6 +200,7 @@ table {
     font-size: 12px;
     line-height: 15px;
     margin-top: 1em;
+    cursor: pointer;
 }
 
 .video-title {
@@ -193,6 +214,10 @@ table {
     display: flex;
     flex-flow: row;
     align-items: center;
+}
+
+.video-widgits span {
+    cursor: pointer;
 }
 
 .views {
@@ -240,6 +265,7 @@ hr {
 .desc-top-row img {
     margin-top: 0em;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 
@@ -258,6 +284,7 @@ hr {
     margin-top: 1em;
     color: #FFF;
     font-size: 14px;
+    cursor: pointer;
 }
 
 .subs {
@@ -293,6 +320,7 @@ hr {
 
 .user-desc a {
     color: #3ea6ff;
+    cursor: pointer;
 }
 
 .expand {
@@ -316,6 +344,7 @@ hr {
 .sort {
     margin-left: 0.6em;
     font-size: 14px;
+    cursor: pointer;
 }
 
 .add-comment-container {
@@ -330,6 +359,7 @@ hr {
     height: 40px;
     width: 40px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .add-comment {
@@ -368,12 +398,17 @@ hr {
 .comment-username {
     font-weight: 600;
     font-size: 13px;
+    cursor: pointer;
 }
 
 .comment-timestamp {
     color: #AAA;
     font-size: 12px;
     margin-left: 0.4em;
+}
+
+.comment-timestamp:hover {
+    color: rgba(255, 255, 255, 0.849);
 }
 
 .comment {
@@ -391,16 +426,19 @@ hr {
 .comment-widgit span {
     font-size: 16px;
     margin-right: 0.6em;
+    cursor: pointer;
 }
 
 .comment-widgit p {
     font-size: 12px;
     color: #AAA;
     margin-right: 1em;
+    
 }
 
 .comment-reply {
     margin-left: 1em;
+    cursor: pointer;
 }
 
 
@@ -412,6 +450,7 @@ hr {
     font-size: 14px;
     font-weight: 600;
     margin: 0.8em 0 0 -6px;
+    cursor: pointer;
 }
 
 /* comment reply */
@@ -426,6 +465,7 @@ hr {
     height: 24px;
     width: 24px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 /* Sidebar/reccomended videos */
@@ -452,6 +492,7 @@ aside {
     font-weight: 500;
     background-color: #FFFFFF33;
     min-width: 12px;
+    cursor: pointer;
 }
 
 .selected {
@@ -468,6 +509,28 @@ aside {
     position: relative;
     text-align: center;
     color: white;
+    cursor: pointer;
+}
+
+.reccomended-video:hover .thumbnail-overlay,
+.reccomended-video:hover .thumbnail-menu {
+    visibility: visible;
+} 
+ 
+
+.thumbnail-overlay {
+    display: flex;
+    flex-flow: column; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3px 4px;
+    visibility: hidden;
+}
+
+.thumbnail-overlay img {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 12px;
 }
 
 .thumbnail-timestamp {
@@ -483,15 +546,29 @@ aside {
     padding: 3px 4px
 }
 
+.thumbnail-menu {
+    color: #AAA;
+    visibility: hidden;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    margin-right: -2em;
+    
+}
+
 .reccomended-video {
     display: flex;
     flex-flow: row;
     color: #FFF;
+    position: relative;
 }
 
 .reccomended-video-info {
     margin-left: 0.6em;
+    cursor: pointer;
 }
+
+
 
 .reccomended-video-title {
     margin: 0 0 5px 0;
