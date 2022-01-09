@@ -433,6 +433,7 @@ hr {
 aside {
 
     display: block;
+    margin-top: 24px;
 }
 
 .reccomended-header {
@@ -441,6 +442,7 @@ aside {
     font-size: 14px;
     align-items: center;
     color: #FFF;
+    margin-bottom: 1em;
 }
 
 .reccomended-header p {
@@ -451,6 +453,7 @@ aside {
     background-color: #FFFFFF33;
     min-width: 12px;
 }
+
 .selected {
     background-color: #FFF !important;
     color: #030303;
@@ -458,7 +461,26 @@ aside {
 
 .reccomended-video-container {
     width: 402px;
-    margin: 1em 0 0 8px;
+    margin: 0.4em 0 0 8px;
+}
+
+.thumbnail-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.thumbnail-timestamp {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 2px;
+    right: 0;
+    font-size: 12px;
+    font-weight: 500;
+    height: 12px;
+    margin: 6px;
+    padding: 3px 4px
 }
 
 .reccomended-video {
